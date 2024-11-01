@@ -35,7 +35,7 @@ module.exports = {
       fs.writeFileSync(imagePath, response.data);
 
       message.reply({
-        body: "🎀 𝗔𝗻𝗶𝗺𝗲𝗫\n━━━━━━━━━━━━━━\n\nHere is your generated image based on Animex style\n\n⚙ Prompt: ${prompt}\n👑 Time Taken: ${timeTaken} seconds",
+        body: "🎀 𝗔𝗻𝗶𝗺𝗲𝗫\n━━━━━━━━━━━━━━\n\nHere is your generated image based on Animex style",
         attachment: fs.createReadStream(imagePath) 
       });
     } catch (error) {
